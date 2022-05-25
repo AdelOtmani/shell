@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -empty -type f,d
+find . -maxdepth 1 -empty -type f,d | cut -d : 1,6
