@@ -1,2 +1,2 @@
 #!/bin/bash
-find -name ".*" -ls
+find . -maxdepth 1 -empty -type f,d
