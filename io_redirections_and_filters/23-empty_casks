@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./  -name */ 
+find ./ -type f -type d -name */ 
