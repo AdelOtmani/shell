@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+#loop "while" print best school while i doesn't equal 0, i started at 10
+while [i!=0]; do
+	echo "Best School"
+	export i=10
+	i=i-1
+done 
