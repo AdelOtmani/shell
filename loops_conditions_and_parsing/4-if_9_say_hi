@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # the while loop do the displaying words , and the if condition is for the 9 echo
 n=0
-while [ $n -le 10 ]
+while [ $n -le 11 ]
 do
-    if [ $n == 8 ]
+    if [ $n == 9 ]
     then
         echo "Hi"      
-        break
     fi
     echo "Best School"
     (( n++ ))
