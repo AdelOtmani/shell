@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #loop "while" print best school while i doesn't equal 0, i started at 10
-while [i!=0]; do
-	echo "Best School"
-	export i=10
-	i=i-1
-done 
+x=1
+while [ $x -le 10 ]
+do
+	  echo "Welcome $x times"
+	    x=$(( $x + 1 ))
+    done
