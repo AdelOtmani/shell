@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # until is a loop similar at while
-counter=0
+x=1
 
-until [ $counter -gt 10 ]
+until [ $x -gt 10 ]
 do
   echo "Best School"
-  ((counter++))
+  ((x++))
 done
