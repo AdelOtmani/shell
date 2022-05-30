@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#work for 70 but not for 2hours
+n=1
+h=0
+echo "Hour: $h"
+while [ $n -le 70 ];
+do
+    if [ $n == 60 ];then 
+        ((h++))
+        echo "Hour: $h"
+    else
+        echo $n
+    fi;
+  (( n++ ))
+
+done
