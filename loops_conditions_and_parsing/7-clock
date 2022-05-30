@@ -3,8 +3,9 @@
 n=0
 h=0
 t=0
+read nb
 echo "Hour: $h"
-while [ $t -ne 70 ];
+while [ $t -ne $nb ];
 do
 	if [ $n == 60 ];then
 		((h++))
