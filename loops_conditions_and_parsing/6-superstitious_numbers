@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
-n = 0
-while ( $n -ne 20);
+n=0
+while [ $n -ne 20 ];
 do
 	(( n++ ))
 	case $n in
