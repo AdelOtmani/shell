@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# the while loop do the displaying words , and the if condition is for the 9 echo
+n=1
+while [ $n -le 10 ]
+do
+    if [ $n == 9 ]
+    then
+        echo "Hi"      
+        break
+    fi
+    echo "Best School"
+    (( n++ ))
+done
