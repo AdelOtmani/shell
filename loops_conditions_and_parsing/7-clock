@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-#work for 70 but not for 2hours
-n=1
+#work for with 2 counter (n and t)
+n=0
 h=0
+t=0
+m=$((n%60))
 echo "Hour: $h"
-while [ $n -le $head ];
+while [ $t -ne $head ];
 do
-    if [ $n == 60 ];then 
-        ((h++))
-        echo "Hour: $h"
-	n=1
-    else
-        echo $n
-    fi;
-  (( n++ ))
-
+	if [ $n == 60 ];then
+		((h++))
+		((n=n-60))
+		echo "Hour: $h"
+	else
+		echo $n
+	fi;
+	(( n++ ))
+	(( t++ ))
 done
