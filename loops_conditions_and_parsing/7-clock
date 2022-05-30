@@ -4,7 +4,7 @@ n=0
 h=0
 t=0
 echo "Hour: $h"
-while [ $t -ne "$head" ];
+while [ $t -ne 70 ];
 do
 	if [ $n == 60 ];then
 		((h++))
