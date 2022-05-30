@@ -3,11 +3,12 @@
 n=1
 h=0
 echo "Hour: $h"
-while [ $n -le 70 ];
+while [ $n -le $head ];
 do
     if [ $n == 60 ];then 
         ((h++))
         echo "Hour: $h"
+	n=1
     else
         echo $n
     fi;
