@@ -3,9 +3,8 @@
 n=0
 h=0
 t=0
-m=$((n%60))
 echo "Hour: $h"
-while [ $t -ne $head ];
+while [ $t -ne "$head" ];
 do
 	if [ $n == 60 ];then
 		((h++))
