@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 n = 0
-while ( $n -eq 20)
+while ( $n -nq 20)
 do
 	case $n in
 	4) echo "bad luck from China" 
