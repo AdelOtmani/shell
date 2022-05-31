@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#
+cat apache-access.log | awk '{ print $1 }' 
