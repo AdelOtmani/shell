@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #loop for to put a list and cut  "-" for display correctly
-for i in $(ls);do
- echo $i | cut -d "-" -f2 
+for i in $(ls); do
+ echo "$i" | cut -d "-" -f2 
 done
