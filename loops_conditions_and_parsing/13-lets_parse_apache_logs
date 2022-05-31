@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-#
+#we cat apache-access.log and with awk we print what we want
 cat < apache-access.log | awk '{ print $1 " " $9 }' 

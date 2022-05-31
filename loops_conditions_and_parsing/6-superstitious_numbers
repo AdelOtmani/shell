@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+#case do what if do and with the while loop n grow at 20
 n=0
 while [ $n -ne 20 ];
 do

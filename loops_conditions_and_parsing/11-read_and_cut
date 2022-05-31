@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+#whit read , echo can display passwd and cut give us what we want
 while read -r /etc/passwd
 do
     echo /etc/passwd | cut -f 1,6

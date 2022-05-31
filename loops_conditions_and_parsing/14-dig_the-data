@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-#
+#like the 11for the begin , after we do a count of ocurrencces whith uniq et sort the cat 2 times 1times for having juste access and 1 for having th biggest occurencesat the top.
 cat < apache-access.log | awk '{ print $1 " " $9 }' | sort | uniq -c | sort -nr
