@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 # 
-FILENAME="/school"
-if [ -s ${FILENAME} ]
+if [ -e school ]
 then
 	echo "school file exists"
-	if [ -s ${FILENAME} ]
+	if [ -s school ]
 	then
 		echo "school file is not empty"
-		if [ -f ${FILENAME} ]
+		if [ -f school ]
 		then
 			echo "school is a regular file"
 		fi
