@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+while read -r /etc/passwd
+do
+    echo /etc/passwd | cut -f 1,6
+done
