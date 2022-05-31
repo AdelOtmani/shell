@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+#all conditon for echo fizz,buzz or fizzbuzz for nummer 1 to 100
 x=0
 while [ $x -ne 100 ];
 do
