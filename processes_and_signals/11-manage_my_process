@@ -21,9 +21,9 @@ restart1 () {
         echo "manage_my_process restarted"
     }
 
-read -r i
 
-case $i in
+
+case $1 in
     "start")
         start1 ;;
         
