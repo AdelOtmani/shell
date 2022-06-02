@@ -12,7 +12,7 @@ stop1 () {
     echo "manage_my_process stopped"
 }
 
-restarted () {
+restart1 () {
         job stop manage_my_process
         rm /var/run/my_process.pid
         job start manage_my_process
@@ -29,8 +29,8 @@ case $i in
     stop)
         stop1 ;;
 
-    restarted)
-        restarted ;;
+    restart)
+        restart1 ;;
 
     *)
          echo "Usage: manage_my_process {start|stop|restart}"
