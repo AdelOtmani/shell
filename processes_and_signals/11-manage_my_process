@@ -7,16 +7,16 @@ start1 () {
    }
 
 stop1 () {
-    job stop manage_my_process
+    kill -9 `cat /var/run/my_process_pid`
     rm /var/run/my_process.pid
     echo "manage_my_process stopped"
 }
 
 restart1 () {
-        job stop manage_my_process
+        kill -9 `cat /var/run/my_process_pid`
         rm /var/run/my_process.pid
         job start manage_my_process
-        echo $$ > /var/run/my_process.pid
+        echo $! > /var/run/my_process.pid
         echo "manage_my_process restarted"
     }
 
